@@ -6,7 +6,7 @@ function App() {
     const [contacts, setContacts] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
-    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+    const apiUrl = import.meta.env.VITE_API_URL;
 
     const fetchContacts = async () => {
         try {
